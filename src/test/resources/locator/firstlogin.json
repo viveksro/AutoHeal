@@ -1,0 +1,274 @@
+{
+  "pageDetails": {
+    "pageUrl": "https://www.saucedemo.com/",
+    "pageTitle": "Swag Labs",
+    "scrapedAt": "2026-04-12T12:27:30.472167"
+  },
+  "locators": [
+    {
+      "locatorName": "root",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "id",
+          "propertyValue": "root"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Swag LabsAccepted usernames are:standard_userlocke",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_container"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Swag Labs",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_logo"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Accepted usernames are:standard_userlocked_out_use",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_wrapper"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "div",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_wrapper-inner"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "login_button_container",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "id",
+          "propertyValue": "login_button_container"
+        },
+        {
+          "propertyType": "class",
+          "propertyValue": "form_column"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "div",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login-box"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "form",
+      "locatorTag": "form",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "div",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "form_group"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "user-name",
+      "locatorTag": "input",
+      "properties": [
+        {
+          "propertyType": "id",
+          "propertyValue": "name"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "div",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "form_group"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "password",
+      "locatorTag": "input",
+      "properties": [
+        {
+          "propertyType": "id",
+          "propertyValue": "password"
+        },
+        {
+          "propertyType": "class",
+          "propertyValue": "input_error form_input"
+        },
+        {
+          "propertyType": "name",
+          "propertyValue": "password"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "div",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "error-message-container"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "login-button",
+      "locatorTag": "input",
+      "properties": [
+        {
+          "propertyType": "id",
+          "propertyValue": "login-button"
+        },
+        {
+          "propertyType": "class",
+          "propertyValue": "submit-button btn_action"
+        },
+        {
+          "propertyType": "name",
+          "propertyValue": "login-button"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Accepted usernames are:standard_userlocked_out_use",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_credentials_wrap"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Accepted usernames are:standard_userlocked_out_use",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_credentials_wrap-inner"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "login_credentials",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "id",
+          "propertyValue": "login_credentials"
+        },
+        {
+          "propertyType": "class",
+          "propertyValue": "login_credentials"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Accepted usernames are:",
+      "locatorTag": "h4",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "br",
+      "locatorTag": "br",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "br",
+      "locatorTag": "br",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "br",
+      "locatorTag": "br",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "br",
+      "locatorTag": "br",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "br",
+      "locatorTag": "br",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "br",
+      "locatorTag": "br",
+      "properties": [],
+      "selected": true
+    },
+    {
+      "locatorName": "Password for all users:secret_sauce",
+      "locatorTag": "div",
+      "properties": [
+        {
+          "propertyType": "class",
+          "propertyValue": "login_password"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "locatorName": "Password for all users:",
+      "locatorTag": "h4",
+      "properties": [],
+      "selected": true
+    }
+  ]
+}
