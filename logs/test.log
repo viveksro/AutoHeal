@@ -1,0 +1,1006 @@
+05:02:01.097 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Setting up WebDriver
+05:02:02.645 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:02:02.707 [main        ] INFO  i.g.bonigarcia.wdm.online.Downloader     - Downloading https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win64/chromedriver-win64.zip
+05:02:03.410 [main        ] INFO  i.g.bonigarcia.wdm.online.Downloader     - Extracting driver from compressed file chromedriver-win64.zip
+05:02:03.581 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:02:06.828 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:02:06.828 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - LocatorManager initialized with self-healing capabilities
+05:02:06.835 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Test started
+05:02:07.716 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Navigated to: https://www.saucedemo.com/
+05:02:09.717 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Attempting to find and interact with login elements using self-healing...
+05:02:09.718 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:02:09.738 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [014388515d9c093cddf6f2816437b61e, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61089}, goog:processID: 23600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61089/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 014388515d9c093cddf6f2816437b61e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSendKeys(LocatorManager.java:237)
+	at com.autoramming.tests.LoginSauceTest.testSample(LoginSauceTest.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:02:09.743 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:02:10.600 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:02:10.728 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: user-name
+05:02:10.728 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Successfully entered username
+05:02:10.728 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:02:10.742 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:02:10.842 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:02:10.842 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Successfully entered password
+05:02:10.843 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:02:10.854 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:02:10.978 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Successfully clicked login button
+05:02:10.996 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Test completed successfully
+05:02:13.003 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Tearing down WebDriver
+05:02:13.163 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:02:13.163 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:02:13.176 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:02:13.185 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:02:13.870 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:02:13.870 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:02:13.870 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:02:13.871 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 3: DIRECT ELEMENT FINDING ==========
+05:02:13.871 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Find elements for custom manipulation
+
+05:02:15.348 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigated to application
+
+05:02:16.361 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Finding username element...
+05:02:16.362 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:02:16.376 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f300961ed9af38fd43d6d70a973b252f, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65202}, goog:processID: 25892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65202/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f300961ed9af38fd43d6d70a973b252f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testDirectElementFinding(SelfHealingExampleTest.java:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:02:16.377 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:02:16.956 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:02:16.957 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Username element found
+
+05:02:16.957 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Finding password element...
+05:02:16.957 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:02:16.994 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:02:16.995 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Password element found
+
+05:02:16.995 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Finding login button element...
+05:02:16.995 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:02:17.011 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:02:17.011 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Login button found
+
+05:02:17.011 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Performing custom element interactions...
+05:02:17.333 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Custom interactions complete
+
+05:02:19.341 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 3: PASSED ==========
+
+05:02:19.341 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:02:19.343 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:02:19.483 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:02:19.483 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:02:19.484 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:02:19.484 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:02:19.496 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:02:19.503 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:02:20.178 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:02:20.178 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:02:20.178 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:02:20.179 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 5: LOCATOR MANAGER UTILITIES ==========
+05:02:20.179 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Show available utility methods
+
+05:02:20.179 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Available Utility Methods:
+05:02:20.179 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 1. getPageUrl(): https://www.saucedemo.com/
+05:02:20.180 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 2. getPageTitle(): Swag Labs
+05:02:20.180 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 3. getAllLocators(): Found 26 locators
+05:02:20.180 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 4. getLocatorByName('user-name'): Found? true
+05:02:20.180 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -    - Tag: input
+05:02:20.180 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -    - Selected: true
+05:02:20.181 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 5. getLocatorsByTag('input'): Found 3 input elements
+05:02:20.181 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 6. getSelectedLocators(): Found 26 selected locators
+05:02:20.182 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 5: PASSED ==========
+
+05:02:20.183 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:02:20.183 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:02:20.328 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:02:20.329 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:02:20.330 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:02:20.330 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:02:20.341 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:02:20.350 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:02:21.012 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:02:21.012 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:02:21.013 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:02:21.014 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 1: LOGIN WITH SELF-HEALING ==========
+05:02:21.014 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Demonstrate automatic healing of failing locators
+
+05:02:21.014 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 1: Navigating to: https://www.saucedemo.com/
+05:02:22.053 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigation successful
+
+05:02:24.059 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 2: Finding and filling username field
+05:02:24.059 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Attempting to find 'user-name' element...
+05:02:24.059 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:02:24.073 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fc68092288eaef946edf7b18121175c, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50704}, goog:processID: 16980, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50704/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fc68092288eaef946edf7b18121175c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSendKeys(LocatorManager.java:237)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testLoginWithSelfHealing(SelfHealingExampleTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:02:24.074 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:02:24.653 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:02:24.767 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: user-name
+05:02:24.767 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Username entered successfully
+
+05:02:25.774 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 3: Finding and filling password field
+05:02:25.774 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Attempting to find 'password' element...
+05:02:25.775 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:02:25.787 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:02:25.861 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:02:25.861 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Password entered successfully
+
+05:02:26.862 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 4: Finding and clicking login button
+05:02:26.862 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Attempting to find 'login-button' element...
+05:02:26.862 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:02:26.873 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:02:26.985 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Login button clicked successfully
+
+05:02:28.991 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 5: Verifying login was successful
+05:02:28.997 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Expected title: Swag Labs
+05:02:28.997 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Actual title: Swag Labs
+05:02:28.998 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Page title verified successfully
+
+05:02:28.998 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 1: PASSED ==========
+
+05:02:28.999 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:02:28.999 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:02:29.179 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:02:29.180 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:02:29.181 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:02:29.181 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:02:29.192 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:02:29.199 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:02:29.856 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:02:29.857 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:02:29.857 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:02:29.858 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 2: SAFE CLICK WITH SELF-HEALING ==========
+05:02:29.858 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Demonstrate safe click method with healing
+
+05:02:30.662 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigated to application
+05:02:31.678 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:02:31.692 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c59ee8cd7ed126a1d485e4e5d8162f4e, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59577}, goog:processID: 17744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59577/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c59ee8cd7ed126a1d485e4e5d8162f4e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSafeSendKeys(LocatorManager.java:221)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testSafeClickWithSelfHealing(SelfHealingExampleTest.java:134)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:02:31.692 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:02:32.237 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:02:32.387 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully clicked on element: user-name
+05:02:32.387 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:02:32.402 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:02:32.504 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:02:32.504 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Credentials entered
+
+05:02:32.504 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Using safe click method for login button...
+05:02:32.505 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:02:32.517 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:02:32.635 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully clicked on element: login-button
+05:02:32.635 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Element clicked using safe click method
+05:02:34.642 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 2: PASSED ==========
+
+05:02:34.643 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:02:34.643 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:02:34.832 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:02:34.832 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:02:34.833 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:02:34.833 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:02:34.843 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:02:34.850 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:02:35.485 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:02:35.485 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:02:35.485 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:02:35.486 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 4: SELF-HEALING RECOVERY ==========
+05:02:35.486 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Show recovery when primary locator fails
+
+05:02:35.905 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigated to application
+
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Demonstrating self-healing recovery process:
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - If the ID 'user-name' doesn't exist on the page:
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   1. Primary locator By.id('user-name') will FAIL
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   2. Self-Healing Engine activates automatically
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   3. NLP tokenizer analyzes all visible input elements
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   4. Calculates similarity: 'user-name' vs element attributes
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   5. Returns element with highest similarity score
+05:02:36.919 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   6. Test continues without manual intervention
+
+05:02:36.919 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:02:36.932 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b520a61db05b7f525179354a5f28d961, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65483}, goog:processID: 25292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65483/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b520a61db05b7f525179354a5f28d961
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSendKeys(LocatorManager.java:237)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testSelfHealingRecovery(SelfHealingExampleTest.java:223)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:02:36.932 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:02:37.462 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:02:37.599 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: user-name
+05:02:37.599 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Element found (either primary or via self-healing)
+
+05:02:37.600 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:02:37.615 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:02:37.738 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:02:37.738 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ All elements found and filled
+
+05:02:37.738 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:02:37.751 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:02:37.859 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully clicked on element: login-button
+05:02:39.867 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Final page title: Swag Labs
+05:02:39.867 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 4: PASSED ==========
+
+05:02:39.868 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:02:39.868 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:02:40.048 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:02:40.048 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:09:34.964 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Setting up WebDriver
+05:09:37.329 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:09:37.364 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:09:39.765 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:09:39.765 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - LocatorManager initialized with self-healing capabilities
+05:09:39.778 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Test started
+05:09:41.711 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Navigated to: https://www.saucedemo.com/
+05:09:43.738 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Attempting to find and interact with login elements using self-healing...
+05:09:43.740 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:09:43.841 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7d62ea2f39eec3d3966e7c709c60ca38, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56726}, goog:processID: 29084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56726/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d62ea2f39eec3d3966e7c709c60ca38
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSendKeys(LocatorManager.java:237)
+	at com.autoramming.tests.LoginSauceTest.testSample(LoginSauceTest.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:09:43.850 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:09:45.428 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:09:45.679 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: user-name
+05:09:45.679 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Successfully entered username
+05:09:45.679 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:09:45.719 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:09:45.938 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:09:45.938 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Successfully entered password
+05:09:45.939 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:09:45.966 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:09:46.199 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Successfully clicked login button
+05:09:46.220 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Test completed successfully
+05:09:48.239 [main        ] INFO  com.autoramming.tests.LoginSauceTest     - Tearing down WebDriver
+05:09:48.476 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:09:48.476 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:09:48.497 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:09:48.513 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:09:49.443 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:09:49.443 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:09:49.443 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:09:49.445 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 3: DIRECT ELEMENT FINDING ==========
+05:09:49.445 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Find elements for custom manipulation
+
+05:09:50.523 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigated to application
+
+05:09:51.536 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Finding username element...
+05:09:51.536 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:09:51.554 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b007b57c8c96ce0bf0e9136c6b741ae, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53274}, goog:processID: 31428, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53274/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b007b57c8c96ce0bf0e9136c6b741ae
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testDirectElementFinding(SelfHealingExampleTest.java:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:09:51.555 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:09:52.828 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:09:52.832 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Username element found
+
+05:09:52.832 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Finding password element...
+05:09:52.832 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:09:52.849 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:09:52.849 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Password element found
+
+05:09:52.850 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Finding login button element...
+05:09:52.850 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:09:52.870 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:09:52.870 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Login button found
+
+05:09:52.870 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Performing custom element interactions...
+05:09:53.478 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Custom interactions complete
+
+05:09:55.484 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 3: PASSED ==========
+
+05:09:55.486 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:09:55.487 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:09:55.752 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:09:55.752 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:09:55.755 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:09:55.755 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:09:55.780 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:09:55.791 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:09:56.582 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:09:56.582 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:09:56.582 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:09:56.586 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 5: LOCATOR MANAGER UTILITIES ==========
+05:09:56.587 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Show available utility methods
+
+05:09:56.587 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Available Utility Methods:
+05:09:56.587 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 1. getPageUrl(): https://www.saucedemo.com/
+05:09:56.587 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 2. getPageTitle(): Swag Labs
+05:09:56.587 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 3. getAllLocators(): Found 26 locators
+05:09:56.587 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 4. getLocatorByName('user-name'): Found? true
+05:09:56.588 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -    - Tag: input
+05:09:56.588 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -    - Selected: true
+05:09:56.590 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 5. getLocatorsByTag('input'): Found 3 input elements
+05:09:56.592 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 6. getSelectedLocators(): Found 26 selected locators
+05:09:56.593 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 5: PASSED ==========
+
+05:09:56.609 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:09:56.609 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:09:56.850 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:09:56.850 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:09:56.852 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:09:56.853 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:09:56.873 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:09:56.885 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:09:57.710 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:09:57.710 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:09:57.710 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:09:57.711 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 1: LOGIN WITH SELF-HEALING ==========
+05:09:57.712 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Demonstrate automatic healing of failing locators
+
+05:09:57.714 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 1: Navigating to: https://www.saucedemo.com/
+05:09:58.259 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigation successful
+
+05:10:00.270 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 2: Finding and filling username field
+05:10:00.271 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Attempting to find 'user-name' element...
+05:10:00.271 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:10:00.343 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12c5936641518fce44667c7cce9f34bc, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50061}, goog:processID: 24496, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50061/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 12c5936641518fce44667c7cce9f34bc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSendKeys(LocatorManager.java:237)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testLoginWithSelfHealing(SelfHealingExampleTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:10:00.346 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:10:01.591 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:10:01.847 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: user-name
+05:10:01.847 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Username entered successfully
+
+05:10:02.851 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 3: Finding and filling password field
+05:10:02.851 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Attempting to find 'password' element...
+05:10:02.851 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:10:02.866 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:10:03.002 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:10:03.002 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Password entered successfully
+
+05:10:04.017 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 4: Finding and clicking login button
+05:10:04.017 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Attempting to find 'login-button' element...
+05:10:04.018 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:10:04.035 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:10:04.221 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Login button clicked successfully
+
+05:10:06.221 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - STEP 5: Verifying login was successful
+05:10:06.230 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Expected title: Swag Labs
+05:10:06.231 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Actual title: Swag Labs
+05:10:06.231 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Page title verified successfully
+
+05:10:06.232 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 1: PASSED ==========
+
+05:10:06.233 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:10:06.234 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:10:06.613 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:10:06.614 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:10:06.618 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:10:06.618 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:10:06.644 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:10:06.656 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:10:07.606 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:10:07.606 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:10:07.606 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:10:07.607 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 2: SAFE CLICK WITH SELF-HEALING ==========
+05:10:07.607 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Demonstrate safe click method with healing
+
+05:10:08.162 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigated to application
+05:10:09.165 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:10:09.183 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e5776a354224dd5502b31f6b3431226, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58079}, goog:processID: 28500, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58079/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e5776a354224dd5502b31f6b3431226
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSafeSendKeys(LocatorManager.java:221)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testSafeClickWithSelfHealing(SelfHealingExampleTest.java:134)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:10:09.184 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:10:10.369 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:10:10.598 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully clicked on element: user-name
+05:10:10.599 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:10:10.638 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:10:10.763 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:10:10.763 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Credentials entered
+
+05:10:10.763 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Using safe click method for login button...
+05:10:10.763 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:10:10.778 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:10:10.958 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully clicked on element: login-button
+05:10:10.958 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Element clicked using safe click method
+05:10:12.973 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 2: PASSED ==========
+
+05:10:12.974 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:10:12.975 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:10:13.194 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:10:13.194 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+
+05:10:13.195 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP START ==========
+05:10:13.195 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Setting up WebDriver with self-healing support
+05:10:13.212 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
+05:10:13.227 [main        ] INFO  i.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vivek\.cache\selenium\chromedriver\win64\147.0.7727.117\chromedriver.exe
+05:10:14.076 [main        ] INFO  com.autoramming.utils.LocatorManager     - Locators loaded successfully from: locator/firstlogin.json
+05:10:14.077 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - LocatorManager initialized with self-healing capabilities
+05:10:14.077 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST SETUP COMPLETE ==========
+
+05:10:14.078 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - 
+========== TEST 4: SELF-HEALING RECOVERY ==========
+05:10:14.078 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Objective: Show recovery when primary locator fails
+
+05:10:15.158 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Navigated to application
+
+05:10:16.166 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Demonstrating self-healing recovery process:
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - If the ID 'user-name' doesn't exist on the page:
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   1. Primary locator By.id('user-name') will FAIL
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   2. Self-Healing Engine activates automatically
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   3. NLP tokenizer analyzes all visible input elements
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   4. Calculates similarity: 'user-name' vs element attributes
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   5. Returns element with highest similarity score
+05:10:16.167 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    -   6. Test continues without manual intervention
+
+05:10:16.167 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for user-name: name
+05:10:16.185 [main        ] WARN  com.autoramming.utils.LocatorManager     - Failed to find element using primary locator 'user-name'. Attempting self-healing...
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [970deede2838955cc7b16d04fa9850a6, findElement {value=name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63307}, goog:processID: 20556, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63307/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 970deede2838955cc7b16d04fa9850a6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.autoramming.utils.LocatorManager.findElement(LocatorManager.java:173)
+	at com.autoramming.utils.LocatorManager.findElementSendKeys(LocatorManager.java:237)
+	at com.autoramming.tests.examples.SelfHealingExampleTest.testSelfHealingRecovery(SelfHealingExampleTest.java:223)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:10:16.186 [main        ] INFO  com.autoramming.utils.LocatorManager     - Invoking self-healing for locator: user-name with tag: input
+05:10:17.171 [main        ] INFO  com.autoramming.utils.LocatorManager     - Self-healing successful! Found element for: user-name
+05:10:17.372 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: user-name
+05:10:17.372 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ Element found (either primary or via self-healing)
+
+05:10:17.373 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for password: password
+05:10:17.385 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: password
+05:10:17.490 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully sent keys to element: password
+05:10:17.491 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ All elements found and filled
+
+05:10:17.491 [main        ] DEBUG com.autoramming.utils.LocatorManager     - Using ID locator for login-button: login-button
+05:10:17.505 [main        ] INFO  com.autoramming.utils.LocatorManager     - Element found using primary locator: login-button
+05:10:17.632 [main        ] INFO  com.autoramming.utils.LocatorManager     - Successfully clicked on element: login-button
+05:10:19.683 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Final page title: Swag Labs
+05:10:19.690 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST 4: PASSED ==========
+
+05:10:19.694 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN START ==========
+05:10:19.695 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - Closing WebDriver
+05:10:20.291 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ✓ WebDriver closed successfully
+05:10:20.292 [main        ] INFO  c.a.t.examples.SelfHealingExampleTest    - ========== TEST TEARDOWN COMPLETE ==========
+

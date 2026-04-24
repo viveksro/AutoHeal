@@ -1,8 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="SampleSuite" verbose="1" >
-  <test name="SampleTest" >
+<suite name="AutoHealingSuite" verbose="1" >
+  <test name="AutoHealingTests" >
     <classes>
-      <class name="com.autoramming.SampleTest"/>
+      <!-- Include actual test classes present in the project -->
+      <class name="com.autoramming.tests.LoginSauceTest"/>
+      <class name="com.autoramming.tests.examples.SelfHealingExampleTest"/>
     </classes>
   </test>
 </suite>

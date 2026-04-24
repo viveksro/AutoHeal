@@ -2,7 +2,8 @@ package com.autoramming.tests;
 
 import com.autoramming.utils.LocatorManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,11 +15,11 @@ import org.testng.annotations.Test;
 
 import java.util.Objects;
 
-@Slf4j
 public class LoginSauceTest {
 
     private WebDriver driver;
         private LocatorManager locatorManager;
+    private static final Logger log = LoggerFactory.getLogger(LoginSauceTest.class);
 
         @BeforeMethod
         public void setUp() {
