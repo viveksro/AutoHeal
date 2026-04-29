@@ -89,6 +89,8 @@ and SelfHealingEngine.java in your code:
 
 Because of this brilliant fallback mechanism built directly into your Java code, the tests will successfully execute and self-heal even if the external Docker infrastructure is offline or Database is totally offline.
 
+In this maven project, I want to create a JavaFX recorder which uses Selenium, along with webdrivermanager. Here this recorder is used to do page scrapping. I mean User opens the website given in the Javafx desktop app, then when the page opens it should pull all the elements with the help of Javascript file, typically a js file. This we should achieve using selenium methods. like open the url (webdriver manager) with driver and capture all the web elements using the js file and javascriptexecutor method. The end result should be like when I hit capture button after opening the website, a table view should be seen with list of locators having, locatorname, locatortag, and most importantly a field with list of different locator properties like id, css and xpaths for that locator. After selecting the locators with checkbox in the table. it should store me in a json file with page details too.
+
 
    
 
